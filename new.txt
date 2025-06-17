@@ -1,0 +1,11 @@
+<script>
+   function toggleEdit(field) {
+       let inputField = document.getElementById(field);
+       if (inputField.hasAttribute('readonly')) {
+           inputField.removeAttribute('readonly');
+           inputField.focus();
+       } else {
+           inputField.setAttribute('readonly', true);
+       }
+   }
+</script>
